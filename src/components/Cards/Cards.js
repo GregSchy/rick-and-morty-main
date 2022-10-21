@@ -4,7 +4,7 @@ import styles from './Cards.module.scss'
 
 
 
-export const Cards = ({ results }) => {
+ export const Cards = ({ results }) => {
   let display;
   console.log(results)
 
@@ -54,3 +54,4 @@ export const Cards = ({ results }) => {
     <>{display}</>
   )
 }
+
