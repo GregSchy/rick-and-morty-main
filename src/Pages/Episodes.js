@@ -11,7 +11,7 @@ function Episodes() {
   let [info, setInfo] = useState([])
   let [results, setResults] = useState([])
   let {air_date, name} = info
-  let api = `https://rickandmortyapi.com/api/episode/1`
+  let api = `https://rickandmortyapi.com/api/episode/${id}`
 
   useEffect(()=>{
     (async function(){
@@ -46,7 +46,7 @@ function Episodes() {
       <div className="row">
         <div className="col-3">
         <h4 className="text-center mb-4">Pick Episodes</h4>
-        <InputGroup total={51} />
+        <InputGroup name="Episode" total={51} />
         </div>
         <div className="col-8">
          <div className="row">
