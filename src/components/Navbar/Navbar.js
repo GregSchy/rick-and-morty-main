@@ -1,27 +1,29 @@
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
   <div className="container">
-    <h1 className="text-center ubuntu my-4">Rick and Morty  <span className="text-primary">WiKi</span> 
-      </h1>
+    <Link to="/" className="fs-3 ubuntu navbar-brand">Rick and Morty  <span className="text-primary">WiKi</span> 
+      </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+
+    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul className="navbar-nav fs-5">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <NavLink to="/" className="nav-link">Characters</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
+          <NavLink to="/episodes" className="nav-link" >Episodes</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
+          <NavLink to="/location" className="nav-link" >Location</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
+          
         </li>
       </ul>
     </div>
