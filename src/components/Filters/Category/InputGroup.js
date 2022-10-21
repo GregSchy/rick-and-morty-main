@@ -5,6 +5,7 @@ const InputGroup = ({total}) => {
   return (
     <div class="input-group mb-3">
  
+ 
   <select class="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
 
