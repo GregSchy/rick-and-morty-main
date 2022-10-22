@@ -55,7 +55,7 @@ const Home= () => {
 
   return (
     <div className="App">
-    
+    <h1 className="text-center mb-4">Characters</h1>
       
     <Search setSearch={setSearch} setPageNumber={setPageNumber}/>
 
@@ -66,7 +66,7 @@ const Home= () => {
           
           <div className="col-8">
             <div className="row">
-              <Cards results={results} />
+              <Cards page="/" results={results} />
             </div>
           </div>
         </div>
