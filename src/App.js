@@ -72,7 +72,7 @@ const Home= () => {
         </div>
       </div>
 
-      {/* <Pagination info={info} setPageNumber={setPageNumber} pageNumber={pageNumber} /> */}
+      <Pagination info={info} setPageNumber={setPageNumber} pageNumber={pageNumber} />
     </div>
   );
 }
