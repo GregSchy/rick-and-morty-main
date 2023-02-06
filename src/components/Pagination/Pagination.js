@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
-import styles from './Pagination.scss'
+import styles from "./Pagination.scss";
 
 const Pagination = ({ pageNumber, info, updatePageNumber }) => {
   let pageChange = (data) => {
@@ -37,12 +37,12 @@ const Pagination = ({ pageNumber, info, updatePageNumber }) => {
         `}
       </style>
       <ReactPaginate
-        className={`${styles.przycisk} pagination justify-content-center my-4 gap-4 `}
+        className={`${styles.przycisk} pagination justify-content-center my-4 gap-4 text-light`}
         nextLabel="Next"
         forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
         previousLabel="Prev"
-        previousClassName="btn btn-primary fs-5 prev"
-        nextClassName="btn btn-primary fs-5 next"
+        previousClassName="btn btn-primary fs-5 prev text-light"
+        nextClassName="btn btn-primary fs-5 next text-light"
         activeClassName="active"
         marginPagesDisplayed={width < 576 ? 1 : 2}
         pageRangeDisplayed={width < 576 ? 1 : 2}
